@@ -1,0 +1,85 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+/*void zad1(int liczba)
+{
+	if (liczba > 0)
+	{
+	  zad1(liczba / 2); 
+	  cout << liczba % 2; 
+	}
+}
+
+int main()
+{
+	int liczba;
+	cout << "Podaj liczbe: ";
+	cin >> liczba;
+	cout << "Postac binarna liczby " << liczba << ": ";
+	zad1(liczba);
+	return 0;
+}*/
+/*int zad2(int a, int b)
+{
+	if (a != b)
+	return zad2(a > b ? a - b : a, b > a ? b - a : b);
+	return a;
+}
+
+int main()
+{
+	int a, b;
+    cout << "Podaj dwie liczby: ";
+	cin >> a >> b;
+    cout << "NWD(" << a << "," << b << ") = " << zad2(a, b) << endl;
+	return 0;
+}*/
+/*int zad3(int n)
+{
+	if (n < 3)
+	return 1;
+    return zad3(n - 2) + zad3(n - 1);
+}
+
+int main()
+{
+	int n;
+    cout << "Podaj nr wyrazu ciagu: ";
+	cin >> n;
+	cout << n << "   wyraz ma wartosc:  " << zad3(n) << endl;
+	return 0;
+}*/
+/*long long zad4(int n)
+{
+	if (n < 2)
+	return 1; 
+    return n * zad4(n - 1);
+}
+
+int main()
+{
+	int n;
+	cout << "Podaj liczbe: ";
+	cin >> n;
+	cout << "n! = " << zad4(n) << endl;
+	system("pause");
+	return 0;
+}*/
+double zad5(int n)
+{
+	if (n == 1)
+	return 0;
+	if (n == 2)
+	return 0.5;
+    return -zad5(n - 1) * zad5(n - 2);
+}
+
+int main()
+{
+	int n;
+	cout << "Podaj nr wyrazu ciagu:  ";
+	cin >> n;
+	cout << n << " wyraz ma wartosc:  " << zad5(n) << endl;
+	return 0;
+}
